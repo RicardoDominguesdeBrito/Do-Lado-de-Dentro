@@ -5,15 +5,14 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>DO LADO DE DENTRO | Uma Obra de Esperança</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             colors: {
-              /* Colors derived from IMAGE_6: Earthy browns, sand, deep sky, and blood-tinted gold */
               "on-tertiary": "#1a0f0a",
               "surface-bright": "#2c2420",
               "on-tertiary-container": "#d9b89e",
@@ -34,8 +33,8 @@
               "surface-dim": "#12100f",
               "on-secondary-fixed-variant": "#4a3b33",
               "tertiary-fixed-dim": "#b58e74",
-              "background": "#0c0a09", /* Ultra dark charcoal/brown base */
-              "primary": "#b58e74", /* Muted Desert Gold/Sand */
+              "background": "#0c0a09", 
+              "primary": "#b58e74", 
               "on-tertiary-fixed-variant": "#5e4438",
               "on-tertiary-fixed": "#261a14",
               "on-secondary-container": "#d9c5b2",
@@ -44,7 +43,7 @@
               "on-error": "#690005",
               "secondary-fixed": "#e6ccb2",
               "error": "#ffb4ab",
-              "secondary": "#7a6253", /* Deep earth brown */
+              "secondary": "#7a6253", 
               "outline": "#8a7a70",
               "inverse-primary": "#4a3b33",
               "on-primary-container": "#b58e74",
@@ -52,7 +51,7 @@
               "surface": "#0c0a09",
               "secondary-container": "#4a3b33",
               "on-secondary": "#1a1614",
-              "tertiary": "#8c3b2b", /* Blood/Dust Red accent from the compass */
+              "tertiary": "#8c3b2b", 
               "surface-container-lowest": "#080706",
               "inverse-on-surface": "#1a1614",
               "on-primary-fixed": "#1a1614",
@@ -93,7 +92,6 @@
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary overflow-x-hidden porsche-grid">
-<!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-[#0c0a09]/90 backdrop-blur-2xl border-b border-primary/10 transition-all duration-300">
 <div class="flex justify-between items-center px-8 py-6 w-full max-w-[1440px] mx-auto">
 <div class="text-xl font-black tracking-[-0.05em] text-on-surface">DO LADO DE DENTRO</div>
@@ -105,13 +103,10 @@
 </div>
 </div>
 </nav>
-<!-- [BLOCO 1: Hero Section] -->
 <section class="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-24 overflow-hidden px-6">
-<!-- Subtle Accent Lighting -->
 <div class="absolute top-1/4 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] -z-10"></div>
 <div class="absolute bottom-1/4 left-0 w-[600px] h-[600px] bg-tertiary/5 rounded-full blur-[150px] -z-10"></div>
 <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
-<!-- Text Content -->
 <div class="md:col-span-7 flex flex-col items-start space-y-10 order-2 md:order-1">
 <div class="space-y-4">
 <span class="uppercase tracking-[0.5em] text-primary font-black text-[10px]">A Jornada do Improvável</span>
@@ -134,17 +129,14 @@
 </a>
 </div>
 </div>
-<!-- Hero Image -->
 <div class="md:col-span-5 order-1 md:order-2 flex justify-center relative">
 <div class="relative group w-full max-w-md">
-<img alt="Book Cover: Do Lado de Dentro" class="w-full kinetic-monolith-shadow transition-transform duration-1000 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/ADBb0ujjaIutj5P6mkoFAANqFxdbpa5hFBV1N11i_uBJpGJJXODmmEK-5tHrbpLWCVHWZQ95mbo9JxVq79D5KeuxtBnJK5-0R5lBK9pHUQqzfjKcqB-xzn-spQqMkw6tqp9glen1CDiMlgSX0mIRKouI4MXqRb-ORLKPszku0f6wMpGRUEyG6FkBi7psjGqAJGKZYZiSEfS3E1L1nJ2nymth2J14tLOzVQTDytk8x2Ish4GzOseRnoe8lJpF9mLsOp_kxxdXbs5-JGY"/>
-<!-- Precision Frame -->
+<img alt="Book Cover: Do Lado de Dentro" class="w-full kinetic-monolith-shadow transition-transform duration-1000 group-hover:scale-[1.02]" src="IMG-20260326-WA0014.jpg"/>
 <div class="absolute -inset-4 border border-primary/10 -z-10 pointer-events-none"></div>
 </div>
 </div>
 </div>
 </section>
-<!-- [BLOCO 2: A Narrativa] -->
 <section class="py-48 bg-surface-container-low/20 px-6 border-y border-primary/5" id="narrativa">
 <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
 <div class="md:col-span-4 md:col-start-2">
@@ -166,7 +158,6 @@
 </div>
 </div>
 </section>
-<!-- [BLOCO 3: Ação Principal] -->
 <section class="py-48 px-6 relative overflow-hidden" id="acesso">
 <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"></div>
 <div class="max-w-4xl mx-auto glass-card border border-primary/10 p-12 md:p-32 relative z-10">
@@ -184,7 +175,6 @@
 </div>
 </div>
 </section>
-<!-- [BLOCO 4: O Propósito] -->
 <section class="py-48 bg-background px-6" id="apoio">
 <div class="max-w-[1440px] mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
@@ -209,7 +199,7 @@
 </div>
 <div class="flex flex-col items-center justify-center space-y-12">
 <div class="relative p-6 bg-white shadow-[0_0_50px_rgba(181,142,116,0.15)] group">
-<img alt="QR Code PIX" class="w-64 h-auto grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uhBZ3QhEzfSb83vEH0URZcjH12YLqYW2RzHaHyGh33N8rhOeZU2JEQUAgUI9QQtcAVh2Cde3w6ix02twf-01AMY2Pu1ErEZMvVxsQd5PWyEumWDe2JkP8XQP92kpHpJxTJiXE7kOYTd2W3GKTSq3EV1hRtKX0UPdFBcDkDwEcBduq5jZqxJQf0AzWTybM4hQodiBKrWCcUBHMxGxNQsDtmQjYAG1ublN2ue_oY5LuVLErDcyGor2m99AtlfxwnLSpUouAmpSEo"/>
+<img alt="QR Code PIX" class="w-64 h-auto grayscale hover:grayscale-0 transition-all duration-700" src="Captura de tela_2026-03-26-22-20-10-890_com.mercadopago.wallet-edit.jpg"/>
 <div class="absolute inset-0 border-[12px] border-white pointer-events-none"></div>
 </div>
 <p class="text-[10px] uppercase tracking-[0.5em] text-outline font-bold">Aponte a câmera para doar</p>
@@ -217,7 +207,6 @@
 </div>
 </div>
 </section>
-<!-- Footer -->
 <footer class="w-full py-32 px-8 bg-background border-t border-primary/10">
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 w-full max-w-[1440px] mx-auto">
 <div class="space-y-6">
