@@ -89,9 +89,61 @@
         background-image: radial-gradient(circle at 2px 2px, rgba(181, 142, 116, 0.05) 1px, transparent 0);
         background-size: 40px 40px;
       }
+
+      /* Floating CTA Bar */
+      #floating-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transform: translateY(100%);
+        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      #floating-cta.visible {
+        transform: translateY(0);
+      }
+      #floating-cta.hidden-bar {
+        transform: translateY(100%);
+      }
+      .whatsapp-pulse {
+        animation: wapulse 2.5s infinite;
+      }
+      @keyframes wapulse {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+        50% { box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); }
+      }
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary overflow-x-hidden porsche-grid">
+
+<!-- ===================== FLOATING CTA BAR ===================== -->
+<div id="floating-cta">
+  <div class="bg-[#0c0a09]/95 backdrop-blur-xl border-t border-primary/20 px-4 py-3">
+    <div class="max-w-2xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex flex-col leading-tight">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-outline font-bold">Livro gratuito</span>
+        <span class="text-sm font-black text-on-surface tracking-tight">Do Lado de Dentro</span>
+      </div>
+      <a href="https://wa.me/5564984294110?text=Ol%C3%A1%2C%20Gostaria%20de%20receber%20o%20livro%20Do%20Lado%20de%20Dentro."
+         class="whatsapp-pulse bg-[#25D366] hover:bg-[#128C7E] text-white font-black text-[10px] tracking-[0.2em] uppercase px-6 py-3 flex items-center gap-2 transition-all duration-300 shrink-0">
+        📲 Receber PDF
+      </a>
+      <button onclick="document.getElementById('floating-cta').classList.add('hidden-bar')"
+              class="text-outline hover:text-primary transition-colors ml-1 shrink-0"
+              aria-label="Fechar">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+    </div>
+    <!-- reassurance line -->
+    <p class="text-center text-[9px] uppercase tracking-[0.3em] text-outline/60 mt-1">
+      Sem cadastro · PDF enviado na hora · Sem compromisso
+    </p>
+  </div>
+</div>
+<!-- =========================================================== -->
+
 <nav class="fixed top-0 w-full z-50 bg-[#0c0a09]/90 backdrop-blur-2xl border-b border-primary/10 transition-all duration-300">
 <div class="flex justify-between items-center px-8 py-6 w-full max-w-[1440px] mx-auto">
 <div class="text-xl font-black tracking-[-0.05em] text-on-surface">DO LADO DE DENTRO</div>
@@ -183,20 +235,35 @@
 <h2 class="text-5xl md:text-7xl font-black tracking-[-0.05em] uppercase">COLABORAÇÃO <br/> VOLUNTÁRIA</h2>
 <div class="h-[3px] w-32 bg-primary"></div>
 </div>
-<p class="text-xl font-light leading-relaxed text-on-surface-variant">Este livro não está à venda. Meu desejo é que este testemunho chegue a quem precisa. Após conhecer o propósito desta obra, clique no botão abaixo para ir ao WhatsApp e receber sua cópia em PDF. Se a história agregar valor à sua vida, convido você a apoiar a nossa causa. Não existe um valor definido para ajudar. Sinta-se livre para contribuir de coração, com o que tocar você. 100% da arrecadação é destinada ao apoio de pacientes em tratamento oncológico. Não é necessário enviar comprovante.</p>
-<div class="p-10 bg-surface-container-low border border-primary/10 space-y-6"><p class="text-[10px] uppercase tracking-[0.4em] text-primary font-black">Dados para Contribuição</p>
-<div class="space-y-2">
-<p class="text-lg font-bold text-on-surface">Ricardo Domingues de Brito</p>
-<p class="text-base font-mono text-primary/80">ricardodbrito@gmail.com</p>
-</div>
-<button class="mt-4 mb-10 flex items-center gap-3 text-[10px] uppercase font-black tracking-[0.3em] text-on-surface hover:text-primary transition-colors group" onclick="navigator.clipboard.writeText('ricardodbrito@gmail.com'); alert('Chave PIX copiada!')">
-<span class="material-symbols-outlined text-sm group-hover:scale-125 transition-transform">content_copy</span>
-                            Copiar Chave PIX
-                        </button>
-                        
+<p class="text-xl font-light leading-relaxed text-on-surface-variant">Este livro não está à venda. Meu desejo é que este testemunho chegue a quem precisa. Clique no botão abaixo para ir ao WhatsApp e receber sua cópia em PDF — é gratuito, sem cadastro, sem compromisso.</p>
+
+<p class="text-xl font-light leading-relaxed text-on-surface-variant mt-6">Se este livro tocou você, há uma forma de fazer ele chegar a quem está no hospital agora, lutando contra o câncer, sem condições de arcar com as despesas do tratamento. Sua contribuição, qualquer valor, vai direto para essas pessoas. Sem intermediários.</p>
+
+<p class="text-xl font-light leading-relaxed text-on-surface-variant mt-6">Não existe valor definido. Sinta-se livre para contribuir de coração, com o que tocar você. Não é necessário enviar comprovante.</p>
+<!-- WhatsApp primeiro -->
 <a class="w-full bg-[#25D366] hover:bg-[#128C7E] px-8 py-6 text-white font-black text-[10px] tracking-[0.2em] uppercase flex items-center justify-center gap-4 transition-all duration-300 shadow-xl" href="https://wa.me/5564984294110?text=Ol%C3%A1%2C%20Gostaria%20de%20receber%20o%20livro%20Do%20Lado%20de%20Dentro.">
-                        📲 Continuar para o WhatsApp e Receber o Livro
-                    </a>
+  📲 Receber o Livro Gratuitamente no WhatsApp
+</a>
+<p class="text-[10px] uppercase tracking-[0.3em] text-outline/70 text-center">Sem cadastro · PDF enviado na hora · Sem compromisso</p>
+
+<!-- Divisor -->
+<div class="flex items-center gap-4 pt-6">
+  <div class="flex-1 h-[1px] bg-primary/10"></div>
+  <span class="text-[10px] uppercase tracking-[0.3em] text-outline font-bold whitespace-nowrap">Se desejar contribuir</span>
+  <div class="flex-1 h-[1px] bg-primary/10"></div>
+</div>
+
+<!-- PIX abaixo -->
+<div class="p-10 bg-surface-container-low border border-primary/10 space-y-6">
+  <p class="text-[10px] uppercase tracking-[0.4em] text-primary font-black">Dados para Contribuição</p>
+  <div class="space-y-2">
+    <p class="text-lg font-bold text-on-surface">Ricardo Domingues de Brito</p>
+    <p class="text-base font-mono text-primary/80">ricardodbrito@gmail.com</p>
+  </div>
+  <button class="mt-4 mb-2 flex items-center gap-3 text-[10px] uppercase font-black tracking-[0.3em] text-on-surface hover:text-primary transition-colors group" onclick="navigator.clipboard.writeText('ricardodbrito@gmail.com'); alert('Chave PIX copiada!')">
+    <span class="material-symbols-outlined text-sm group-hover:scale-125 transition-transform">content_copy</span>
+    Copiar Chave PIX
+  </button>
 </div>
 </div>
 <div class="flex flex-col items-center justify-center space-y-12">
@@ -227,4 +294,16 @@
             </p>
 </div>
 </footer>
-</body></html>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Show floating bar after scrolling past the hero button
+  const floatingCta = document.getElementById('floating-cta');
+  const heroBtn = document.querySelector('a[href="#apoio"]');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        // Hero button scrolled out of view — show floating bar
+        floatingCta.classList.add('visible');
+      } else {
+        // Hero button visibl
