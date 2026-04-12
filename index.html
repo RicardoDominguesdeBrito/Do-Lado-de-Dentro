@@ -210,6 +210,27 @@
 </div>
 </div>
 </section>
+<section class="py-32 px-6 bg-surface-container-low/30 border-y border-primary/5">
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <div class="flex flex-col items-center gap-4">
+      <img src="montagem_ricardo.jpg" alt="Ricardo — 2020 e 2025" class="w-full max-w-sm opacity-90"/>
+      <p class="text-[9px] uppercase tracking-[0.4em] text-outline/50 font-bold">A mesma pessoa. Duas histórias.</p>
+    </div>
+    <div class="space-y-8">
+      <span class="uppercase tracking-[0.5em] text-primary font-black text-[10px]">Quem escreve</span>
+      <p class="text-2xl md:text-3xl font-extralight leading-snug text-on-surface tracking-tight">
+        Sou Ricardo. Em 2020 estava num leito de hospital com um prognóstico que os médicos não sabiam explicar. Hoje, em 2026, estou aqui para contar.
+      </p>
+      <p class="text-lg font-light leading-relaxed text-on-surface-variant">
+        Não escrevi este livro depois de vencer. Escrevi enquanto ainda não sabia o final. O que você vai ler não é teoria — é o que acontece quando o saber humano chega ao seu limite e algo maior ocupa esse espaço.
+      </p>
+      <p class="text-lg font-light leading-relaxed text-on-surface-variant">
+        Ofereço este testemunho gratuitamente porque ele não me pertence. Se tocar você, talvez você queira fazer ele chegar a quem está passando pelo mesmo agora.
+      </p>
+    </div>
+  </div>
+</section>
+
 <section class="py-48 px-6 relative overflow-hidden" id="acesso">
 <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"></div>
 <div class="max-w-4xl mx-auto glass-card border border-primary/10 p-12 md:p-32 relative z-10">
@@ -258,7 +279,7 @@
   <p class="text-[10px] uppercase tracking-[0.4em] text-primary font-black">Dados para Contribuição</p>
   <div class="space-y-2">
     <p class="text-lg font-bold text-on-surface">Ricardo Domingues de Brito</p>
-    <p class="text-base font-mono text-primary/80">ricardodbrito@gmail.com</p>
+    <p class="text-base font-mono text-primary/80"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8dffe4eeecffe9e2e9efffe4f9e2cdeae0ece4e1a3eee2e0">[email&#160;protected]</a></p>
   </div>
   <button class="mt-4 mb-2 flex items-center gap-3 text-[10px] uppercase font-black tracking-[0.3em] text-on-surface hover:text-primary transition-colors group" onclick="navigator.clipboard.writeText('ricardodbrito@gmail.com'); alert('Chave PIX copiada!')">
     <span class="material-symbols-outlined text-sm group-hover:scale-125 transition-transform">content_copy</span>
@@ -295,15 +316,9 @@
 </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Show floating bar after scrolling past the hero button
   const floatingCta = document.getElementById('floating-cta');
   const heroBtn = document.querySelector('a[href="#apoio"]');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        // Hero button scrolled out of view — show floating bar
-        floatingCta.classList.add('visible');
-      } else {
-        // Hero button visibl
+  const observer = new IntersectionObserver((en
