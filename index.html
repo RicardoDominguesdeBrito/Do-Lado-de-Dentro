@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
-<html class="dark scroll-smooth" lang="pt-BR"><head>
+<html class="dark scroll-smooth" lang="pt-BR">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>DO LADO DE DENTRO | Uma Obra de Esperança</title>
@@ -8,117 +8,61 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-tertiary": "#1a0f0a",
-              "surface-bright": "#2c2420",
-              "on-tertiary-container": "#d9b89e",
-              "surface-tint": "#b58e74",
-              "tertiary-container": "#3d2b24",
-              "tertiary-fixed": "#e6ccb2",
-              "surface-container": "#1a1614",
-              "on-secondary-fixed": "#1a1614",
-              "surface-container-high": "#26201d",
-              "inverse-surface": "#f2e9e4",
-              "on-surface": "#f2e9e4",
-              "on-primary-fixed-variant": "#4a3b33",
-              "primary-container": "#120f0e",
-              "surface-variant": "#3d322d",
-              "on-background": "#f2e9e4",
-              "primary-fixed": "#e6ccb2",
-              "on-error-container": "#ffdad6",
-              "surface-dim": "#12100f",
-              "on-secondary-fixed-variant": "#4a3b33",
-              "tertiary-fixed-dim": "#b58e74",
-              "background": "#0c0a09", 
-              "primary": "#b58e74", 
-              "on-tertiary-fixed-variant": "#5e4438",
-              "on-tertiary-fixed": "#261a14",
-              "on-secondary-container": "#d9c5b2",
-              "error-container": "#93000a",
-              "surface-container-low": "#161211",
-              "on-error": "#690005",
-              "secondary-fixed": "#e6ccb2",
-              "error": "#ffb4ab",
-              "secondary": "#7a6253", 
-              "outline": "#8a7a70",
-              "inverse-primary": "#4a3b33",
-              "on-primary-container": "#b58e74",
-              "primary-fixed-dim": "#b58e74",
-              "surface": "#0c0a09",
-              "secondary-container": "#4a3b33",
-              "on-secondary": "#1a1614",
-              "tertiary": "#8c3b2b", 
-              "surface-container-lowest": "#080706",
-              "inverse-on-surface": "#1a1614",
-              "on-primary-fixed": "#1a1614",
-              "secondary-fixed-dim": "#7a6253",
-              "surface-container-highest": "#3d322d",
-              "outline-variant": "#4a3b33",
-              "on-primary": "#0c0a09",
-              "on-surface-variant": "#d9c5b2"
-            },
-            fontFamily: {
-              "headline": ["Inter"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
-          },
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-tertiary": "#1a0f0a","surface-bright": "#2c2420","on-tertiary-container": "#d9b89e",
+          "surface-tint": "#b58e74","tertiary-container": "#3d2b24","tertiary-fixed": "#e6ccb2",
+          "surface-container": "#1a1614","on-secondary-fixed": "#1a1614","surface-container-high": "#26201d",
+          "inverse-surface": "#f2e9e4","on-surface": "#f2e9e4","on-primary-fixed-variant": "#4a3b33",
+          "primary-container": "#120f0e","surface-variant": "#3d322d","on-background": "#f2e9e4",
+          "primary-fixed": "#e6ccb2","on-error-container": "#ffdad6","surface-dim": "#12100f",
+          "on-secondary-fixed-variant": "#4a3b33","tertiary-fixed-dim": "#b58e74",
+          "background": "#0c0a09","primary": "#b58e74","on-tertiary-fixed-variant": "#5e4438",
+          "on-tertiary-fixed": "#261a14","on-secondary-container": "#d9c5b2","error-container": "#93000a",
+          "surface-container-low": "#161211","on-error": "#690005","secondary-fixed": "#e6ccb2",
+          "error": "#ffb4ab","secondary": "#7a6253","outline": "#8a7a70","inverse-primary": "#4a3b33",
+          "on-primary-container": "#b58e74","primary-fixed-dim": "#b58e74","surface": "#0c0a09",
+          "secondary-container": "#4a3b33","on-secondary": "#1a1614","tertiary": "#8c3b2b",
+          "surface-container-lowest": "#080706","inverse-on-surface": "#1a1614","on-primary-fixed": "#1a1614",
+          "secondary-fixed-dim": "#7a6253","surface-container-highest": "#3d322d","outline-variant": "#4a3b33",
+          "on-primary": "#0c0a09","on-surface-variant": "#d9c5b2"
         },
-      }
-    </script>
+        fontFamily: { "headline": ["Inter"], "body": ["Inter"], "label": ["Inter"] },
+        borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+      },
+    },
+  }
+</script>
 <style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-      }
-      .kinetic-monolith-shadow {
-        box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.8), 0 30px 60px -30px rgba(181, 142, 116, 0.2);
-      }
-      .machined-metal {
-        background: linear-gradient(135deg, #b58e74 0%, #7a6253 100%);
-      }
-      .glass-card {
-        background: rgba(12, 10, 9, 0.8);
-        backdrop-filter: blur(40px);
-      }
-      .porsche-grid {
-        background-image: radial-gradient(circle at 2px 2px, rgba(181, 142, 116, 0.05) 1px, transparent 0);
-        background-size: 40px 40px;
-      }
-
-      /* Floating CTA Bar */
-      #floating-cta {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        transform: translateY(100%);
-        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-        padding-bottom: env(safe-area-inset-bottom);
-      }
-      #floating-cta.visible {
-        transform: translateY(0);
-      }
-      #floating-cta.hidden-bar {
-        transform: translateY(100%);
-      }
-      .whatsapp-pulse {
-        animation: wapulse 2.5s infinite;
-      }
-      @keyframes wapulse {
-        0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
-        50% { box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); }
-      }
-    </style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+  .kinetic-monolith-shadow { box-shadow: 0 50px 100px -20px rgba(0,0,0,0.8), 0 30px 60px -30px rgba(181,142,116,0.2); }
+  .machined-metal { background: linear-gradient(135deg, #b58e74 0%, #7a6253 100%); }
+  .glass-card { background: rgba(12,10,9,0.8); backdrop-filter: blur(40px); }
+  .porsche-grid {
+    background-image: radial-gradient(circle at 2px 2px, rgba(181,142,116,0.05) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+  #floating-cta {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  #floating-cta.visible { transform: translateY(0); }
+  #floating-cta.hidden-bar { transform: translateY(100%); }
+  .whatsapp-pulse { animation: wapulse 2.5s infinite; }
+  @keyframes wapulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(37,211,102,0); }
+  }
+</style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary overflow-x-hidden porsche-grid">
 
-<!-- ===================== FLOATING CTA BAR ===================== -->
+<!-- FLOATING CTA BAR -->
 <div id="floating-cta">
   <div class="bg-[#0c0a09]/95 backdrop-blur-xl border-t border-primary/20 px-4 py-3">
     <div class="max-w-2xl mx-auto flex items-center justify-between gap-4">
@@ -128,92 +72,92 @@
       </div>
       <a href="https://wa.me/5564984294110?text=Ol%C3%A1%2C%20Gostaria%20de%20receber%20o%20livro%20Do%20Lado%20de%20Dentro."
          class="whatsapp-pulse bg-[#25D366] hover:bg-[#128C7E] text-white font-black text-[10px] tracking-[0.2em] uppercase px-6 py-3 flex items-center gap-2 transition-all duration-300 shrink-0">
-        📲 Receber PDF
+        &#128242; Receber PDF
       </a>
       <button onclick="document.getElementById('floating-cta').classList.add('hidden-bar')"
-              class="text-outline hover:text-primary transition-colors ml-1 shrink-0"
-              aria-label="Fechar">
+              class="text-outline hover:text-primary transition-colors ml-1 shrink-0" aria-label="Fechar">
         <span class="material-symbols-outlined text-lg">close</span>
       </button>
     </div>
-    <!-- reassurance line -->
     <p class="text-center text-[9px] uppercase tracking-[0.3em] text-outline/60 mt-1">
-      Sem cadastro · PDF enviado na hora · Sem compromisso
+      Sem cadastro &middot; PDF enviado na hora &middot; Sem compromisso
     </p>
   </div>
 </div>
-<!-- =========================================================== -->
 
+<!-- NAV -->
 <nav class="fixed top-0 w-full z-50 bg-[#0c0a09]/90 backdrop-blur-2xl border-b border-primary/10 transition-all duration-300">
-<div class="flex justify-between items-center px-8 py-6 w-full max-w-[1440px] mx-auto">
-<div class="text-xl font-black tracking-[-0.05em] text-on-surface">DO LADO DE DENTRO</div>
-<div class="hidden md:flex gap-12 items-center">
-<a class="font-bold tracking-[0.2em] uppercase text-[10px] text-outline hover:text-primary transition-colors duration-300" href="#narrativa">Obra</a>
-<a class="font-bold tracking-[0.2em] uppercase text-[10px] text-outline hover:text-primary transition-colors duration-300" href="#narrativa">Narrativa</a>
-<a class="font-bold tracking-[0.2em] uppercase text-[10px] text-outline hover:text-primary transition-colors duration-300" href="#acesso">Acesso</a>
-<a class="font-bold tracking-[0.2em] uppercase text-[10px] text-outline hover:text-primary transition-colors duration-300" href="#apoio">Apoio</a>
-</div>
-</div>
+  <div class="flex justify-between items-center px-8 py-6 w-full max-w-[1440px] mx-auto">
+    <div class="text-xl font-black tracking-[-0.05em] text-on-surface">DO LADO DE DENTRO</div>
+    <div class="hidden md:flex gap-12 items-center">
+      <a class="font-bold tracking-[0.2em] uppercase text-[10px] text-outline hover:text-primary transition-colors duration-300" href="#narrativa">Obra</a>
+      <a class="font-bold tracking-[0.2em] uppercase text-[10px] text-outline hover:text-primary transition-colors duration-300" href="#narrativa">Narrativa</a>
+      <a class="font-bold tracking-[0.2em] uppercase text-[10px] text-outline hover:text-primary transition-colors duration-300" href="#acesso">Acesso</a>
+      <a class="font-bold tracking-[0.2em] uppercase text-[10px] text-outline hover:text-primary transition-colors duration-300" href="#apoio">Apoio</a>
+    </div>
+  </div>
 </nav>
+
+<!-- HERO -->
 <section class="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-24 overflow-hidden px-6">
-<div class="absolute top-1/4 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] -z-10"></div>
-<div class="absolute bottom-1/4 left-0 w-[600px] h-[600px] bg-tertiary/5 rounded-full blur-[150px] -z-10"></div>
-<div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
-<div class="md:col-span-7 flex flex-col items-start space-y-10 order-2 md:order-1">
-<div class="space-y-4">
-<span class="uppercase tracking-[0.5em] text-primary font-black text-[10px]">A Jornada do Improvável</span>
-<h1 class="text-6xl md:text-[7rem] font-black tracking-[-0.06em] leading-[0.9] text-on-surface uppercase">
-                        DO LADO <br/> DE DENTRO
-                    </h1>
-</div>
-<div class="space-y-6 max-w-xl">
-<p class="text-2xl md:text-3xl font-light tracking-tight text-on-surface-variant leading-tight">
-                        Quando o saber encontra seu limite.
-                    </p>
-<p class="italic font-light text-lg text-outline leading-relaxed border-l-2 border-primary/20 pl-8">
-                        "Ele não me salvou do deserto. Ele me encontrou dentro dele."
-                    </p>
-</div>
-<div class="pt-8 flex flex-wrap gap-4">
-<a class="machined-metal px-12 py-6 text-on-primary font-black text-[10px] tracking-[0.3em] uppercase hover:brightness-110 active:scale-95 transition-all duration-300 flex items-center gap-4 group" href="#apoio">
-                        Solicitar Livro Gratuitamente
-                        <span class="material-symbols-outlined text-sm group-hover:translate-y-1 transition-transform">arrow_downward</span>
-</a>
-</div>
-</div>
-<div class="md:col-span-5 order-1 md:order-2 flex justify-center relative">
-<div class="relative group w-full max-w-md">
-<img alt="Book Cover: Do Lado de Dentro" class="w-full kinetic-monolith-shadow transition-transform duration-1000 group-hover:scale-[1.02]" src="IMG-20260326-WA0014.jpg"/>
-<div class="absolute -inset-4 border border-primary/10 -z-10 pointer-events-none"></div>
-</div>
-</div>
-</div>
+  <div class="absolute top-1/4 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] -z-10"></div>
+  <div class="absolute bottom-1/4 left-0 w-[600px] h-[600px] bg-tertiary/5 rounded-full blur-[150px] -z-10"></div>
+  <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+    <div class="md:col-span-7 flex flex-col items-start space-y-10 order-2 md:order-1">
+      <div class="space-y-4">
+        <span class="uppercase tracking-[0.5em] text-primary font-black text-[10px]">A Jornada do Improvável</span>
+        <h1 class="text-6xl md:text-[7rem] font-black tracking-[-0.06em] leading-[0.9] text-on-surface uppercase">
+          DO LADO <br/> DE DENTRO
+        </h1>
+      </div>
+      <div class="space-y-6 max-w-xl">
+        <p class="text-2xl md:text-3xl font-light tracking-tight text-on-surface-variant leading-tight">
+          Quando o saber encontra seu limite.
+        </p>
+        <p class="italic font-light text-lg text-outline leading-relaxed border-l-2 border-primary/20 pl-8">
+          "Ele não me salvou do deserto. Ele me encontrou dentro dele."
+        </p>
+      </div>
+      <div class="pt-8 flex flex-wrap gap-4">
+        <a class="machined-metal px-12 py-6 text-on-primary font-black text-[10px] tracking-[0.3em] uppercase hover:brightness-110 active:scale-95 transition-all duration-300 flex items-center gap-4 group" href="#apoio">
+          Solicitar Livro Gratuitamente
+          <span class="material-symbols-outlined text-sm group-hover:translate-y-1 transition-transform">arrow_downward</span>
+        </a>
+      </div>
+    </div>
+    <div class="md:col-span-5 order-1 md:order-2 flex justify-center relative">
+      <div class="relative group w-full max-w-md">
+        <img alt="Book Cover: Do Lado de Dentro" class="w-full kinetic-monolith-shadow transition-transform duration-1000 group-hover:scale-[1.02]" src="IMG-20260326-WA0014.jpg"/>
+        <div class="absolute -inset-4 border border-primary/10 -z-10 pointer-events-none"></div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- NARRATIVA -->
 <section class="py-48 bg-surface-container-low/20 px-6 border-y border-primary/5" id="narrativa">
-<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
-<div class="md:col-span-4 md:col-start-2">
-<h2 class="text-[10px] uppercase tracking-[0.6em] font-black text-primary mb-8">O Peso do Saber</h2>
-<div class="h-[2px] w-24 bg-primary/40 mb-12"></div>
-</div>
-<div class="md:col-span-6 space-y-16">
-<p class="text-3xl md:text-5xl font-extralight leading-[1.1] text-on-surface tracking-[-0.03em]">
-                    Um testemunho real de quem foi até a última linha do prognóstico médico e descobriu que o final poderia ser diferente...
-                </p>
-<div class="grid grid-cols-1 gap-10 text-on-surface-variant font-light leading-relaxed text-lg opacity-90">
-<p>
-                        "Do Lado de Dentro" não é apenas uma história de superação; é um mergulho visceral na fragilidade humana e na força da fé quando todas as luzes se apagam. Ricardo compartilha sua travessia pelo vale da sombra com uma honestidade que desconforta e, simultaneamente, cura.
-                    </p>
-<p>
-                        A obra desconstrói a ideia de que a ausência de dor é o único sinal de vitória. Aqui, a vitória é encontrada na presença, na resiliência e na descoberta de uma paz que excede todo o entendimento técnico-científico.
-                    </p>
-</div>
-</div>
-</div>
+  <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+    <div class="md:col-span-4 md:col-start-2">
+      <h2 class="text-[10px] uppercase tracking-[0.6em] font-black text-primary mb-8">O Peso do Saber</h2>
+      <div class="h-[2px] w-24 bg-primary/40 mb-12"></div>
+    </div>
+    <div class="md:col-span-6 space-y-16">
+      <p class="text-3xl md:text-5xl font-extralight leading-[1.1] text-on-surface tracking-[-0.03em]">
+        Um testemunho real de quem foi até a última linha do prognóstico médico e descobriu que o final poderia ser diferente...
+      </p>
+      <div class="grid grid-cols-1 gap-10 text-on-surface-variant font-light leading-relaxed text-lg opacity-90">
+        <p>"Do Lado de Dentro" não é apenas uma história de superação; é um mergulho visceral na fragilidade humana e na força da fé quando todas as luzes se apagam. Ricardo compartilha sua travessia pelo vale da sombra com uma honestidade que desconforta e, simultaneamente, cura.</p>
+        <p>A obra desconstrói a ideia de que a ausência de dor é o único sinal de vitória. Aqui, a vitória é encontrada na presença, na resiliência e na descoberta de uma paz que excede todo o entendimento técnico-científico.</p>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- QUEM ESCREVE -->
 <section class="py-32 px-6 bg-surface-container-low/30 border-y border-primary/5">
   <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
     <div class="flex flex-col items-center gap-4">
-      <img src="montagem_ricardo (1).jpg" alt="Ricardo — 2020 e 2026" class="w-full max-w-sm opacity-90"/>
+      <img src="montagem_ricardo (1).jpg" alt="Ricardo 2020 e 2026" class="w-full max-w-sm opacity-90"/>
       <p class="text-[9px] uppercase tracking-[0.4em] text-outline/50 font-bold">A mesma pessoa. Duas histórias.</p>
     </div>
     <div class="space-y-8">
@@ -231,94 +175,126 @@
   </div>
 </section>
 
+<!-- ACESSO -->
 <section class="py-48 px-6 relative overflow-hidden" id="acesso">
-<div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"></div>
-<div class="max-w-4xl mx-auto glass-card border border-primary/10 p-12 md:p-32 relative z-10">
-<div class="flex flex-col items-center text-center space-y-10">
-<span class="material-symbols-outlined text-7xl text-primary" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
-<h2 class="text-5xl md:text-7xl font-black tracking-[-0.05em] uppercase">ACESSO LIBERADO</h2>
-<div class="space-y-8 max-w-2xl">
-<p class="text-xl md:text-2xl font-light text-on-surface-variant leading-relaxed">
-                        Este livro não está à venda. Ele nasceu de um propósito e será entregue a quem sentir que este é o momento de ler estas palavras.
-                    </p>
-<p class="text-[10px] uppercase tracking-[0.4em] text-outline font-bold">Para receber sua cópia, continue até a seção de apoio abaixo.</p>
-</div>
-<div class="pt-12 w-full flex flex-col items-center gap-8">
-<a class="mt-8 inline-block border border-primary/30 text-primary px-12 py-4 font-black text-[10px] tracking-[0.3em] uppercase hover:bg-primary hover:text-on-primary transition-all duration-500" href="#apoio">Ver como receber</a></div>
-</div>
-</div>
-</section>
-<section class="py-48 bg-background px-6" id="apoio">
-<div class="max-w-[1440px] mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
-<div class="space-y-12">
-<div class="space-y-6">
-<h2 class="text-5xl md:text-7xl font-black tracking-[-0.05em] uppercase">COLABORAÇÃO <br/> VOLUNTÁRIA</h2>
-<div class="h-[3px] w-32 bg-primary"></div>
-</div>
-<p class="text-xl font-light leading-relaxed text-on-surface-variant">Este livro não está à venda. Meu desejo é que este testemunho chegue a quem precisa. Clique no botão abaixo para ir ao WhatsApp e receber sua cópia em PDF — é gratuito, sem cadastro, sem compromisso.</p>
-
-<p class="text-xl font-light leading-relaxed text-on-surface-variant mt-6">Se este livro tocou você, há uma forma de fazer ele chegar a quem está no hospital agora, lutando contra o câncer, sem condições de arcar com as despesas do tratamento. Sua contribuição, qualquer valor, vai direto para essas pessoas. Sem intermediários.</p>
-
-<p class="text-xl font-light leading-relaxed text-on-surface-variant mt-6">Não existe valor definido. Sinta-se livre para contribuir de coração, com o que tocar você. Não é necessário enviar comprovante.</p>
-<!-- WhatsApp primeiro -->
-<a class="w-full bg-[#25D366] hover:bg-[#128C7E] px-8 py-6 text-white font-black text-[10px] tracking-[0.2em] uppercase flex items-center justify-center gap-4 transition-all duration-300 shadow-xl" href="https://wa.me/5564984294110?text=Ol%C3%A1%2C%20Gostaria%20de%20receber%20o%20livro%20Do%20Lado%20de%20Dentro.">
-  📲 Receber o Livro Gratuitamente no WhatsApp
-</a>
-<p class="text-[10px] uppercase tracking-[0.3em] text-outline/70 text-center">Sem cadastro · PDF enviado na hora · Sem compromisso</p>
-
-<!-- Divisor -->
-<div class="flex items-center gap-4 pt-6">
-  <div class="flex-1 h-[1px] bg-primary/10"></div>
-  <span class="text-[10px] uppercase tracking-[0.3em] text-outline font-bold whitespace-nowrap">Se desejar contribuir</span>
-  <div class="flex-1 h-[1px] bg-primary/10"></div>
-</div>
-
-<!-- PIX abaixo -->
-<div class="p-10 bg-surface-container-low border border-primary/10 space-y-6">
-  <p class="text-[10px] uppercase tracking-[0.4em] text-primary font-black">Dados para Contribuição</p>
-  <div class="space-y-2">
-    <p class="text-lg font-bold text-on-surface">Ricardo Domingues de Brito</p>
-    <p class="text-base font-mono text-primary/80"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8dffe4eeecffe9e2e9efffe4f9e2cdeae0ece4e1a3eee2e0">[email&#160;protected]</a></p>
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"></div>
+  <div class="max-w-4xl mx-auto glass-card border border-primary/10 p-12 md:p-32 relative z-10">
+    <div class="flex flex-col items-center text-center space-y-10">
+      <span class="material-symbols-outlined text-7xl text-primary" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+      <h2 class="text-5xl md:text-7xl font-black tracking-[-0.05em] uppercase">ACESSO LIBERADO</h2>
+      <div class="space-y-8 max-w-2xl">
+        <p class="text-xl md:text-2xl font-light text-on-surface-variant leading-relaxed">
+          Este livro não está à venda. Ele nasceu de um propósito e será entregue a quem sentir que este é o momento de ler estas palavras.
+        </p>
+        <p class="text-[10px] uppercase tracking-[0.4em] text-outline font-bold">Para receber sua cópia, continue até a seção de apoio abaixo.</p>
+      </div>
+      <div class="pt-12 w-full flex flex-col items-center gap-8">
+        <a class="mt-8 inline-block border border-primary/30 text-primary px-12 py-4 font-black text-[10px] tracking-[0.3em] uppercase hover:bg-primary hover:text-on-primary transition-all duration-500" href="#apoio">Ver como receber</a>
+      </div>
+    </div>
   </div>
-  <button class="mt-4 mb-2 flex items-center gap-3 text-[10px] uppercase font-black tracking-[0.3em] text-on-surface hover:text-primary transition-colors group" onclick="navigator.clipboard.writeText('ricardodbrito@gmail.com'); alert('Chave PIX copiada!')">
-    <span class="material-symbols-outlined text-sm group-hover:scale-125 transition-transform">content_copy</span>
-    Copiar Chave PIX
-  </button>
-</div>
-</div>
-<div class="flex flex-col items-center justify-center space-y-12">
-<div class="relative p-6 bg-white shadow-[0_0_50px_rgba(181,142,116,0.15)] group">
-<img alt="QR Code PIX" class="w-64 h-auto grayscale hover:grayscale-0 transition-all duration-700" src="pix.jpg"/>
-<div class="absolute inset-0 border-[12px] border-white pointer-events-none"></div>
-</div>
-<p class="text-[10px] uppercase tracking-[0.5em] text-outline font-bold">Aponte a câmera para doar</p>
-</div>
-</div>
-</div>
 </section>
+
+<!-- APOIO -->
+<section class="py-48 bg-background px-6" id="apoio">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
+      <div class="space-y-12">
+        <div class="space-y-6">
+          <h2 class="text-5xl md:text-7xl font-black tracking-[-0.05em] uppercase">COLABORAÇÃO <br/> VOLUNTÁRIA</h2>
+          <div class="h-[3px] w-32 bg-primary"></div>
+        </div>
+        <p class="text-xl font-light leading-relaxed text-on-surface-variant">Este livro não está à venda. Meu desejo é que este testemunho chegue a quem precisa. Clique no botão abaixo para ir ao WhatsApp e receber sua cópia em PDF &mdash; é gratuito, sem cadastro, sem compromisso.</p>
+        <p class="text-xl font-light leading-relaxed text-on-surface-variant">Se este livro tocou você, há uma forma de fazer ele chegar a quem está no hospital agora, lutando contra o câncer, sem condições de arcar com as despesas do tratamento. Sua contribuição, qualquer valor, vai direto para essas pessoas. Sem intermediários.</p>
+        <p class="text-xl font-light leading-relaxed text-on-surface-variant">Não existe valor definido. Sinta-se livre para contribuir de coração, com o que tocar você. Não é necessário enviar comprovante.</p>
+
+        <!-- WhatsApp primeiro -->
+        <a class="w-full bg-[#25D366] hover:bg-[#128C7E] px-8 py-6 text-white font-black text-[10px] tracking-[0.2em] uppercase flex items-center justify-center gap-4 transition-all duration-300 shadow-xl"
+           href="https://wa.me/5564984294110?text=Ol%C3%A1%2C%20Gostaria%20de%20receber%20o%20livro%20Do%20Lado%20de%20Dentro.">
+          &#128242; Receber o Livro Gratuitamente no WhatsApp
+        </a>
+        <p class="text-[10px] uppercase tracking-[0.3em] text-outline/70 text-center">Sem cadastro &middot; PDF enviado na hora &middot; Sem compromisso</p>
+
+        <!-- Divisor -->
+        <div class="flex items-center gap-4 pt-6">
+          <div class="flex-1 h-[1px] bg-primary/10"></div>
+          <span class="text-[10px] uppercase tracking-[0.3em] text-outline font-bold whitespace-nowrap">Se desejar contribuir</span>
+          <div class="flex-1 h-[1px] bg-primary/10"></div>
+        </div>
+
+        <!-- PIX -->
+        <div class="p-10 bg-surface-container-low border border-primary/10 space-y-6">
+          <p class="text-[10px] uppercase tracking-[0.4em] text-primary font-black">Dados para Contribuição</p>
+          <div class="space-y-2">
+            <p class="text-lg font-bold text-on-surface">Ricardo Domingues de Brito</p>
+            <p class="text-base font-mono text-primary/80" id="pix-display"></p>
+          </div>
+          <button id="copy-pix-btn" class="mt-4 mb-2 flex items-center gap-3 text-[10px] uppercase font-black tracking-[0.3em] text-on-surface hover:text-primary transition-colors group">
+            <span class="material-symbols-outlined text-sm group-hover:scale-125 transition-transform">content_copy</span>
+            Copiar Chave PIX
+          </button>
+        </div>
+      </div>
+
+      <!-- QR Code -->
+      <div class="flex flex-col items-center justify-center space-y-12">
+        <div class="relative p-6 bg-white shadow-[0_0_50px_rgba(181,142,116,0.15)] group">
+          <img alt="QR Code PIX" class="w-64 h-auto grayscale hover:grayscale-0 transition-all duration-700" src="pix.jpg"/>
+          <div class="absolute inset-0 border-[12px] border-white pointer-events-none"></div>
+        </div>
+        <p class="text-[10px] uppercase tracking-[0.5em] text-outline font-bold">Aponte a câmera para doar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="w-full py-32 px-8 bg-background border-t border-primary/10">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 w-full max-w-[1440px] mx-auto">
-<div class="space-y-6">
-<div class="text-2xl font-black tracking-tighter text-on-surface">DO LADO DE DENTRO</div>
-<p class="font-bold tracking-[0.3em] text-[10px] uppercase text-primary/60">
-                    Uma obra de esperança.
-                </p>
-</div>
-<div class="flex flex-wrap gap-12">
-<a class="font-bold tracking-[0.2em] text-[10px] uppercase text-outline hover:text-primary transition-colors duration-300" href="#">Privacidade</a>
-<a class="font-bold tracking-[0.2em] text-[10px] uppercase text-outline hover:text-primary transition-colors duration-300" href="#">Termos</a>
-<a class="font-bold tracking-[0.2em] text-[10px] uppercase text-outline hover:text-primary transition-colors duration-300" href="#">Contato</a>
-</div>
-<p class="font-bold tracking-[0.2em] text-[10px] uppercase text-outline/50">
-                © 2024 DO LADO DE DENTRO. TODOS OS DIREITOS RESERVADOS.
-            </p>
-</div>
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 w-full max-w-[1440px] mx-auto">
+    <div class="space-y-6">
+      <div class="text-2xl font-black tracking-tighter text-on-surface">DO LADO DE DENTRO</div>
+      <p class="font-bold tracking-[0.3em] text-[10px] uppercase text-primary/60">Uma obra de esperança.</p>
+    </div>
+    <div class="flex flex-wrap gap-12">
+      <a class="font-bold tracking-[0.2em] text-[10px] uppercase text-outline hover:text-primary transition-colors duration-300" href="#">Privacidade</a>
+      <a class="font-bold tracking-[0.2em] text-[10px] uppercase text-outline hover:text-primary transition-colors duration-300" href="#">Termos</a>
+      <a class="font-bold tracking-[0.2em] text-[10px] uppercase text-outline hover:text-primary transition-colors duration-300" href="#">Contato</a>
+    </div>
+    <p class="font-bold tracking-[0.2em] text-[10px] uppercase text-outline/50">
+      &copy; 2026 DO LADO DE DENTRO. TODOS OS DIREITOS RESERVADOS.
+    </p>
+  </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Show floating bar after scrolling past the hero button
-  const floatingCta = document.getElementById('floating-cta');
-  const heroBtn = document.querySelector('a[href="#apoio"]');
+<script>
+  // PIX montado via JS para evitar ofuscação do Cloudflare
+  var u = 'ricardodbrito';
+  var d = 'gmail' + '.com';
+  var pix = u + '@' + d;
+  document.getElementById('pix-display').textContent = pix;
+  document.getElementById('copy-pix-btn').addEventListener('click', function() {
+    navigator.clipboard.writeText(pix).then(function() {
+      alert('Chave PIX copiada!');
+    }).catch(function() {
+      prompt('Copie a chave PIX:', pix);
+    });
+  });
 
-  const observer = new IntersectionObserver((en
+  // Barra flutuante
+  var floatingCta = document.getElementById('floating-cta');
+  var heroBtn = document.querySelector('a[href="#apoio"]');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) {
+        floatingCta.classList.add('visible');
+      } else {
+        floatingCta.classList.remove('visible');
+        floatingCta.classList.remove('hidden-bar');
+      }
+    });
+  }, { threshold: 0 });
+  if (heroBtn) observer.observe(heroBtn);
+</script>
+
+</body>
+</html>
